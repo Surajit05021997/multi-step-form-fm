@@ -203,6 +203,11 @@ main {
   gap: 0.2rem;
 }
 
+.form-field>div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .form-field label {
   color: var(--clr-primary-900);
   font-weight: var(--fw-semi-bold);
@@ -218,6 +223,11 @@ main {
 
 .form-field input::placeholder {
   color: var(--clr-neutral-900);
+}
+
+.personal-info-form .invalid-field {
+  color: var(--clr-warning);
+  font-weight: var(--fw-semi-bold);
 }
 
 /* plans styling */
@@ -487,6 +497,10 @@ main {
   .step-content {
     margin-top: 0;
     width: auto;
+  }
+
+  .form-field>div {
+    flex-direction: column;
   }
 
   .plan-card-container {
